@@ -1,0 +1,142 @@
+<html>
+<head>
+<title>Starter.md</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #d5b778;}
+.s4 { color: #bababa;}
+.s5 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Starter.md</font>
+</center></td></tr></table>
+<pre><span class="s0"># </span><span class="s2">Crear Pruebas en AzureDevOps Metropolitan Touring QA</span>
+
+<span class="s0">## </span><span class="s2">Índice de Contenidos</span>
+
+<span class="s3">&lt;procedure&gt;</span>
+    <span class="s3">&lt;step&gt;</span>
+        <span class="s3">&lt;p&gt;&lt;a </span><span class="s4">href</span><span class="s5">=&quot;#devops-intro&quot;</span><span class="s3">&gt;</span><span class="s2">DevOps Introducción</span><span class="s3">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="s3">&lt;/step&gt;</span>
+    <span class="s3">&lt;step&gt;</span>
+        <span class="s3">&lt;p&gt;&lt;a </span><span class="s4">href</span><span class="s5">=&quot;#quedevops&quot;</span><span class="s3">&gt;</span><span class="s2">Qué son los tests en Azure DevOps</span><span class="s3">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="s3">&lt;/step&gt;</span>
+    <span class="s3">&lt;step&gt;</span>
+        <span class="s3">&lt;p&gt;&lt;a </span><span class="s4">href</span><span class="s5">=&quot;#devops-crear&quot;</span><span class="s3">&gt;</span><span class="s2">Crear un Test en Azure DevOps</span><span class="s3">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="s3">&lt;/step&gt;</span>
+    <span class="s3">&lt;step&gt;</span>
+        <span class="s3">&lt;p&gt;</span><span class="s2">Crear Tests masivos en Azure DevOps</span><span class="s3">&lt;/p&gt;</span>
+    <span class="s3">&lt;/step&gt;</span>
+<span class="s3">&lt;/procedure&gt;</span>
+
+
+
+<span class="s0">## </span><span class="s2">DevOps Introducción {id=</span><span class="s1">&quot;</span><span class="s2">devops-intro</span><span class="s1">&quot;</span><span class="s2">}</span>
+<span class="s2">Azure DevOps es un conjunto de servicios que permite a los equipos de desarrollo y operaciones compartir código, </span>
+<span class="s2">realizar un seguimiento del trabajo y enviar software; todo en un solo lugar. Azure DevOps incluye repositorios de Git </span>
+<span class="s2">privados, un sistema de compilación CI/CD, tableros Kanban, seguimiento de problemas y mucho más.</span>
+
+<span class="s2">En Metropilitan Touring QA, utilizamos Azure DevOps para crear y ejecutar pruebas automatizadas, además revisar los</span>
+<span class="s2">resultados de las pruebas y generar reportes de los mismos.</span>
+
+<span class="s2">Por otro lado QA utiliza Azure DevOps para revisar estados de los bugs, crear bugs, asignar bugs, etc.</span>
+
+<span class="s2">Finalmente QA es también responsable de crear historias de usuario y tareas en Azure DevOps cuando se levantan procesos.</span>
+
+<span class="s3">&lt;img </span><span class="s4">src</span><span class="s5">=&quot;../images/devops.png&quot; </span><span class="s4">alt</span><span class="s5">=&quot;DevOps&quot; </span><span class="s4">width</span><span class="s5">=&quot;500&quot; </span><span class="s4">border-effect</span><span class="s5">=&quot;line&quot;</span><span class="s3">/&gt;</span>
+
+
+
+<span class="s0">## </span><span class="s2">Qué son los tests en Azure DevOps {id=</span><span class="s1">&quot;</span><span class="s2">quedevops</span><span class="s1">&quot;</span><span class="s2">}</span>
+<span class="s2">Los tests en Azure DevOps son un conjunto de pasos que se ejecutan en un ambiente de Azure DevOps, los cuales pueden</span>
+<span class="s2">ser ejecutados de forma manual o automática.</span>
+
+<span class="s2">Hoy en día en Metropolitan Touring QA, se utilizan los tests de Azure DevOps para ejecutar pruebas manuales, que son</span>
+<span class="s2">ejecutadas por los testers de QA. Estos tests validan que los procesos, apps y/o funcionalidades de los sistemas de</span>
+<span class="s2">Metropolitan Touring funcionen correctamente. Y todos los tests deben encontrarse en estado </span><span class="s1">&quot;</span><span class="s2">Passed</span><span class="s1">&quot; </span><span class="s2">para que una funcionalidad</span>
+<span class="s2">pueda ser liberada a producción.</span>
+
+<span class="s2">En caso de que el test falle, el tester de QA debe crear un bug en Azure DevOps, y asignarlo al equipo de desarrollo</span>
+<span class="s2">para que lo resuelva. El equipo de desarrollo es quien debe cambiar el estado del bug a </span><span class="s1">&quot;</span><span class="s2">Resolved for QA</span><span class="s1">&quot; </span><span class="s2">y asignarlo al tester de QA para que lo valide.</span>
+<span class="s2">Una vez que el bug es resuelto, el tester de QA debe ejecutar nuevamente TODOS los test y verificar que el bug haya sido resuelto.</span>
+
+<span class="s2">Nota</span><span class="s1">: </span><span class="s2">Es importante identificar el siguiente logo, ya que se utiliza para identificar los tests en Azure DevOps. Más adelante</span>
+<span class="s2">se muestra la interfaz de Azure DevOps y se explica cómo crear un test paso a paso.</span>
+
+<span class="s1">![</span><span class="s2">ops</span><span class="s1">](</span><span class="s2">testslogo.png</span><span class="s1">)</span><span class="s2">{ width=</span><span class="s1">&quot;</span><span class="s2">400px</span><span class="s1">&quot; </span><span class="s2">}{border-effect=line}</span>
+
+
+
+<span class="s0">## </span><span class="s2">Inject XML</span>
+<span class="s2">For example, this is how you inject a procedure</span><span class="s1">:</span>
+
+<span class="s3">&lt;procedure </span><span class="s4">title</span><span class="s5">=&quot;Inject a procedure&quot; </span><span class="s4">id</span><span class="s5">=&quot;inject-a-procedure&quot;</span><span class="s3">&gt;</span>
+    <span class="s3">&lt;step&gt;</span>
+        <span class="s3">&lt;p&gt;</span><span class="s2">Start typing and select a procedure type from the completion suggestions:</span><span class="s3">&lt;/p&gt;</span>
+        <span class="s3">&lt;img </span><span class="s4">src</span><span class="s5">=&quot;completion_procedure.png&quot; </span><span class="s4">alt</span><span class="s5">=&quot;completion suggestions for procedure&quot; </span><span class="s4">border-effect</span><span class="s5">=&quot;line&quot;</span><span class="s3">/&gt;</span>
+    <span class="s3">&lt;/step&gt;</span>
+    <span class="s3">&lt;step&gt;</span>
+        <span class="s3">&lt;p&gt;</span><span class="s2">Press </span><span class="s3">&lt;shortcut&gt;</span><span class="s2">Tab</span><span class="s3">&lt;/shortcut&gt; </span><span class="s2">or </span><span class="s3">&lt;shortcut&gt;</span><span class="s2">Enter</span><span class="s3">&lt;/shortcut&gt; </span><span class="s2">to insert the markup.</span><span class="s3">&lt;/p&gt;</span>
+    <span class="s3">&lt;/step&gt;</span>
+<span class="s3">&lt;/procedure&gt;</span>
+
+<span class="s0">## </span><span class="s2">Add interactive elements</span>
+
+<span class="s0">### </span><span class="s2">Tabs</span>
+<span class="s2">To add switchable content, you can make use of tabs </span><span class="s1">(</span><span class="s2">inject them by starting to type `tab` on a new line</span><span class="s1">):</span>
+
+<span class="s3">&lt;tabs&gt;</span>
+    <span class="s3">&lt;tab </span><span class="s4">title</span><span class="s5">=&quot;Markdown&quot;</span><span class="s3">&gt;</span>
+        <span class="s3">&lt;code-block </span><span class="s4">lang</span><span class="s5">=&quot;plain text&quot;</span><span class="s3">&gt;</span><span class="s2">![Alt Text](new_topic_options.png){ width=450 }</span><span class="s3">&lt;/code-block&gt;</span>
+    <span class="s3">&lt;/tab&gt;</span>
+    <span class="s3">&lt;tab </span><span class="s4">title</span><span class="s5">=&quot;Semantic markup&quot;</span><span class="s3">&gt;</span>
+        <span class="s3">&lt;code-block </span><span class="s4">lang</span><span class="s5">=&quot;xml&quot;</span><span class="s3">&gt;</span>
+            <span class="s2">&lt;![CDATA[</span><span class="s3">&lt;img </span><span class="s4">src</span><span class="s5">=&quot;new_topic_options.png&quot; </span><span class="s4">alt</span><span class="s5">=&quot;Alt text&quot; </span><span class="s4">width</span><span class="s5">=&quot;450px&quot;</span><span class="s3">/&gt;</span><span class="s2">]]&gt;</span><span class="s3">&lt;/code-block&gt;</span>
+    <span class="s3">&lt;/tab&gt;</span>
+<span class="s3">&lt;/tabs&gt;</span>
+
+<span class="s0">### </span><span class="s2">Collapsible blocks</span>
+<span class="s2">Apart from injecting entire XML elements, you can use attributes to configure the behavior of certain elements.</span>
+<span class="s2">For example, you can collapse a chapter that contains non-essential information</span><span class="s1">:</span>
+
+<span class="s0">#### </span><span class="s2">Supplementary info {collapsible=</span><span class="s1">&quot;</span><span class="s2">true</span><span class="s1">&quot;</span><span class="s2">}</span>
+<span class="s2">Content under a collapsible header will be collapsed by default,</span>
+<span class="s2">but you can modify the behavior by adding the following attribute</span><span class="s1">:</span>
+<span class="s2">`default-state=</span><span class="s1">&quot;</span><span class="s2">expanded</span><span class="s1">&quot;</span><span class="s2">`</span>
+
+<span class="s0">### </span><span class="s2">Convert selection to XML</span>
+<span class="s2">If you need to extend an element with more functions, you can convert selected content from Markdown to semantic markup.</span>
+<span class="s2">For example, if you want to merge cells in a table, it's much easier to convert it to XML than do this in Markdown.</span>
+<span class="s2">Position the caret anywhere in the table and press </span><span class="s1">&lt;shortcut&gt;</span><span class="s2">Alt+Enter</span><span class="s1">&lt;/shortcut&gt;:</span>
+
+<span class="s3">&lt;img </span><span class="s4">src</span><span class="s5">=&quot;convert_table_to_xml.png&quot; </span><span class="s4">alt</span><span class="s5">=&quot;Convert table to XML&quot; </span><span class="s4">width</span><span class="s5">=&quot;706&quot; </span><span class="s4">border-effect</span><span class="s5">=&quot;line&quot;</span><span class="s3">/&gt;</span>
+
+<span class="s0">## </span><span class="s2">Feedback and support</span>
+<span class="s2">Please report any issues, usability improvements, or feature requests to our</span>
+<span class="s3">&lt;a </span><span class="s4">href</span><span class="s5">=&quot;https://youtrack.jetbrains.com/newIssue?project=WRS&quot;</span><span class="s3">&gt;</span><span class="s2">YouTrack project</span><span class="s3">&lt;/a&gt;</span>
+<span class="s2">(you will need to register).</span>
+
+<span class="s2">You are welcome to join our</span>
+<span class="s3">&lt;a </span><span class="s4">href</span><span class="s5">=&quot;https://jb.gg/WRS_Slack&quot;</span><span class="s3">&gt;</span><span class="s2">public Slack workspace</span><span class="s3">&lt;/a&gt;</span><span class="s2">.</span>
+<span class="s2">Before you do, please read our [Code of conduct](https://plugins.jetbrains.com/plugin/20158-writerside/docs/writerside-code-of-conduct.html).</span>
+<span class="s2">We assume that you’ve read and acknowledged it before joining.</span>
+
+<span class="s2">You can also always email us at </span><span class="s1">[</span><span class="s2">writerside@jetbrains.com</span><span class="s1">](</span><span class="s2">mailto</span><span class="s1">:</span><span class="s2">writerside@jetbrains.com</span><span class="s1">)</span><span class="s2">.</span>
+
+<span class="s3">&lt;seealso&gt;</span>
+    <span class="s3">&lt;category </span><span class="s4">ref</span><span class="s5">=&quot;wrs&quot;</span><span class="s3">&gt;</span>
+        <span class="s3">&lt;a </span><span class="s4">href</span><span class="s5">=&quot;https://plugins.jetbrains.com/plugin/20158-writerside/docs/markup-reference.html&quot;</span><span class="s3">&gt;</span><span class="s2">Markup reference</span><span class="s3">&lt;/a&gt;</span>
+        <span class="s3">&lt;a </span><span class="s4">href</span><span class="s5">=&quot;https://plugins.jetbrains.com/plugin/20158-writerside/docs/manage-table-of-contents.html&quot;</span><span class="s3">&gt;</span><span class="s2">Reorder topics in the TOC</span><span class="s3">&lt;/a&gt;</span>
+        <span class="s3">&lt;a </span><span class="s4">href</span><span class="s5">=&quot;https://plugins.jetbrains.com/plugin/20158-writerside/docs/local-build.html&quot;</span><span class="s3">&gt;</span><span class="s2">Build and publish</span><span class="s3">&lt;/a&gt;</span>
+        <span class="s3">&lt;a </span><span class="s4">href</span><span class="s5">=&quot;https://plugins.jetbrains.com/plugin/20158-writerside/docs/configure-search.html&quot;</span><span class="s3">&gt;</span><span class="s2">Configure Search</span><span class="s3">&lt;/a&gt;</span>
+    <span class="s3">&lt;/category&gt;</span>
+<span class="s3">&lt;/seealso&gt;</span></pre>
+</body>
+</html>
