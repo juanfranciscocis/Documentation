@@ -68,6 +68,11 @@ La documentación es una parte fundamental en el desarrollo de software, ya que 
     <p>Una vez que hemos creado la documentación debemos hacer un commit and push a Github</p>
 </step>
 <step>
+    <p>Para hacer un commit debemos ir a la pestaña de Git y hacer click en el botón de Commit</p>
+    <img src="../images/DOCUMENTACION/commit.png" alt="7"/>
+    <p>Se debe ingresar un mensaje de commit que detalle lo que se agregó o modificó</p>
+</step>
+<step>
     <p>Para hacer un push a Github debemos ir a la pestaña de Git y hacer click en el botón de Push</p>
     <img src="../images/DOCUMENTACION/push.png" alt="7"/>
 </step>
