@@ -10,4 +10,8 @@
         <description>Created after removal of "This is the first topic" from Help Instance</description>
         <accepts>Default-topic.html</accepts>
     </rule>
+    <rule id="2b56c3f5">
+        <description>Created after removal of "Start" from METROPOLITAN TOURING DOCUMENTACIÓN</description>
+        <accepts>Start.html</accepts>
+    </rule>
 </rules>
