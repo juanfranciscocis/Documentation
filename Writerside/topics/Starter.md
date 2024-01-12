@@ -10,7 +10,7 @@
         <p><a href="#quedevops">Qué son los tests en Azure DevOps</a></p>
     </step>
     <step>
-        <p><a href="#devops-crear">Crear un Test en Azure DevOps</a></p>
+        <p><a href="">Crear un Test en Azure DevOps</a></p>
     </step>
     <step>
         <p>Crear Tests masivos en Azure DevOps</p>
@@ -51,7 +51,7 @@ Una vez que el bug es resuelto, el tester de QA debe ejecutar nuevamente TODOS l
 Nota: Es importante identificar el siguiente logo, ya que se utiliza para identificar los tests en Azure DevOps. Más adelante
 se muestra la interfaz de Azure DevOps y se explica cómo crear un test paso a paso.
 
-![ops](testslogo.png){ width="400px" }{border-effect=line}
+
 
 
 
