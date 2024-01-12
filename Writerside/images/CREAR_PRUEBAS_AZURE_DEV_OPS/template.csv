@@ -1,0 +1,100 @@
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Revision,Area Path,Assigned To,State
+,Test Case,Agregar Unidades de Negocio (Éxito),,,,1,Proyecto/Área,A nombre del responsable,Propuesto
+,,,1,Iniciar sesión como administrador.,El administrador inicia sesión con éxito.,,,,
+,,,2,"Navegar a la lista ""Unidades de Negocio"".",El administrador accede a la lista de unidades de negocio.,,,,
+,,,3,Agregar una nueva unidad de negocio con información válida.,La unidad de negocio se agrega exitosamente.,,,,
+,,,4,Verificar que el usuario solicitante pueda ver la unidad de negocio agregada.,El usuario solicitante puede ver la unidad de negocio agregada.,,,,
+
+,Test Case,Asignar Aprobadores a Unidades de Negocio (Éxito),,,,1,Proyecto/Área,A nombre del responsable,Propuesto
+,,,1,Iniciar sesión como administrador.,El administrador inicia sesión con éxito.,,,,
+,,,2,"Navegar a la lista ""Unidades de Negocio"".",El administrador accede a la lista de unidades de negocio.,,,,
+,,,3,Seleccionar una unidad de negocio existente.,El administrador selecciona una unidad de negocio existente.,,,,
+,,,4,Asignar un aprobador y correo de aprobación a la unidad de negocio.,El aprobador y correo de aprobación se asignan correctamente.,,,,
+,,,5,Verificar que el usuario solicitante pueda ver la asignación de aprobador en la unidad de negocio.,El usuario solicitante puede ver la asignación de aprobador en la unidad de negocio.,,,,
+
+,Test Case,Agregar Usuarios (Éxito),,,,1,Proyecto/Área,A nombre del responsable,Propuesto
+,,,1,Iniciar sesión como administrador.,El administrador inicia sesión con éxito.,,,,
+,,,2,"Navegar a la lista ""Usuarios"".",El administrador accede a la lista de usuarios.,,,,
+,,,3,Agregar un nuevo usuario con información válida.,El usuario se agrega exitosamente.,,,,
+,,,4,Verificar que el usuario solicitante pueda ver al nuevo usuario agregado.,El usuario solicitante puede ver al nuevo usuario agregado.,,,,
+
+,Test Case,Asignar Aprobadores a Usuarios (Éxito),,,,1,Proyecto/Área,A nombre del responsable,Propuesto
+,,,1,Iniciar sesión como administrador.,El administrador inicia sesión con éxito.,,,,
+,,,2,"Navegar a la lista ""Usuarios"".",El administrador accede a la lista de usuarios.,,,,
+,,,3,Seleccionar un usuario existente.,El administrador selecciona un usuario existente.,,,,
+,,,4,Asignar un aprobador al usuario.,El aprobador se asigna correctamente al usuario.,,,,
+,,,5,Verificar que el usuario solicitante pueda ver la asignación de aprobador en el usuario.,El usuario solicitante puede ver la asignación de aprobador en el usuario.,,,,
+
+,Test Case,Acceso de Usuario Solicitante (Error),,,,1,Proyecto/Área,A nombre del responsable,Propuesto
+,,,1,Iniciar sesión como usuario solicitante.,El usuario solicitante inicia sesión con éxito.,,,,
+,,,2,Verificar que el usuario solicitante no puede ver ninguna unidad de negocio sin asignar.,El usuario solicitante no puede ver ninguna unidad de negocio sin asignar.,,,,
+,,,3,Verificar que el usuario solicitante no puede ver ningún usuario sin asignar.,El usuario solicitante no puede ver ningún usuario sin asignar.,,,,
+
+,Test Case,Agregar Unidades de Negocio (Error),,,,1,Proyecto/Área,A nombre del responsable,Propuesto
+,,,1,Iniciar sesión como administrador.,El administrador inicia sesión con éxito.,,,,
+,,,2,"Navegar a la lista ""Unidades de Negocio"".",El administrador accede a la lista de unidades de negocio.,,,,
+,,,3,Intentar agregar una nueva unidad de negocio con datos inválidos.,Se muestra un mensaje de error y no se agrega la unidad de negocio.,,,,
+,,,4,Verificar que el usuario solicitante no puede ver la unidad de negocio inválida.,El usuario solicitante no puede ver la unidad de negocio inválida.,,,,
+
+,Test Case,Asignar Aprobadores a Unidades de Negocio (Error),,,,1,Proyecto/Área,A nombre del responsable,Propuesto
+,,,1,Iniciar sesión como administrador.,El administrador inicia sesión con éxito.,,,,
+,,,2,"Navegar a la lista ""Unidades de Negocio"".",El administrador accede a la lista de unidades de negocio.,,,,
+,,,3,Seleccionar una unidad de negocio existente.,El administrador selecciona una unidad de negocio existente.,,,,
+,,,4,Intentar asignar aprobadores y correos de aprobación inválidos a la unidad de negocio.,Se muestra un mensaje de error y no se asignan los aprobadores.,,,,
+,,,5,Verificar que el usuario solicitante no puede ver la asignación de aprobador inválida en la unidad de negocio.,El usuario solicitante no puede ver la asignación de aprobador inválida en la unidad de negocio.,,,,
+
+,Test Case,Acceso de Usuario Solicitante (Sin Unidades Asignadas),,,,1,Proyecto/Área,A nombre del responsable,Propuesto
+,,,1,Iniciar sesión como usuario solicitante.,El usuario solicitante inicia sesión con éxito.,,,,
+,,,2,Verificar que no ve unidades de negocio sin asignar.,El usuario solicitante no ve ninguna unidad de negocio sin asignar.,,,,
+,,,3,Verificar que no ve usuarios sin asignar.,El usuario solicitante no ve ningún usuario sin asignar.,,,,
+
+,Test Case,Actualizar Datos de Unidades de Negocio (Éxito),,,,1,Proyecto/Área,A nombre del responsable,Propuesto
+,,,1,Iniciar sesión como administrador.,El administrador inicia sesión con éxito.,,,,
+,,,2,"Navegar a la lista ""Unidades de Negocio"".",El administrador accede a la lista de unidades de negocio.,,,,
+,,,3,Seleccionar una unidad de negocio existente.,El administrador selecciona una unidad de negocio existente.,,,,
+,,,4,Actualizar la información de la unidad de negocio.,La información de la unidad de negocio se actualiza correctamente.,,,,
+,,,5,Verificar que el usuario solicitante pueda ver la información actualizada de la unidad de negocio.,El usuario solicitante puede ver la información actualizada de la unidad de negocio.,,,,
+
+,Test Case,Eliminar Unidades de Negocio (Éxito),,,,1,Proyecto/Área,A nombre del responsable,Propuesto
+,,,1,Iniciar sesión como administrador.,El administrador inicia sesión con éxito.,,,,
+,,,2,"Navegar a la lista ""Unidades de Negocio"".",El administrador accede a la lista de unidades de negocio.,,,,
+,,,3,Seleccionar una unidad de negocio existente.,El administrador selecciona una unidad de negocio existente.,,,,
+,,,4,Eliminar la unidad de negocio seleccionada.,La unidad de negocio se elimina correctamente.,,,,
+,,,5,Verificar que el usuario solicitante no puede ver la unidad de negocio eliminada.,El usuario solicitante no puede ver la unidad de negocio eliminada.,,,,
+
+,Test Case,Eliminar Usuarios (Éxito),,,,1,Proyecto/Área,A nombre del responsable,Propuesto
+,,,1,Iniciar sesión como administrador.,El administrador inicia sesión con éxito.,,,,
+,,,2,"Navegar a la lista ""Usuarios"".",El administrador accede a la lista de usuarios.,,,,
+,,,3,Seleccionar un usuario existente.,El administrador selecciona un usuario existente.,,,,
+,,,4,Eliminar el usuario seleccionado.,El usuario se elimina correctamente.,,,,
+,,,5,Verificar que el usuario solicitante no puede ver al usuario eliminado.,El usuario solicitante no puede ver al usuario eliminado.,,,,
+
+,Test Case,Gestión de Roles (Éxito),,,,1,Proyecto/Área,A nombre del responsable,Propuesto
+,,,1,Iniciar sesión como administrador.,El administrador inicia sesión con éxito.,,,,
+,,,2,"Navegar a la gestión de roles.",El administrador accede a la gestión de roles.,,,,
+,,,3,Asignar o modificar roles de usuarios.,Los roles de usuario se asignan o modifican correctamente.,,,,
+,,,4,Verificar que el usuario solicitante pueda ver sus nuevos roles asignados.,El usuario solicitante puede ver sus nuevos roles asignados.,,,,
+
+,Test Case,Gestión de Permisos (Éxito),,,,1,Proyecto/Área,A nombre del responsable,Propuesto
+,,,1,Iniciar sesión como administrador.,El administrador inicia sesión con éxito.,,,,
+,,,2,"Navegar a la gestión de permisos.",El administrador accede a la gestión de permisos.,,,,
+,,,3,Asignar permisos específicos a usuarios.,Los permisos se asignan correctamente.,,,,
+,,,4,Verificar que el usuario solicitante pueda realizar las acciones permitidas por sus nuevos permisos.,El usuario solicitante puede realizar las acciones permitidas por sus nuevos permisos.,,,,
+
+,Test Case,Acceso de Aprobador a Unidades de Negocio (Éxito),,,,1,Proyecto/Área,A nombre del responsable,Propuesto
+,,,1,Iniciar sesión como aprobador de la unidad de negocio.,El aprobador de la unidad de negocio inicia sesión con éxito.,,,,
+,,,2,Verificar que el aprobador de la unidad de negocio solo puede ver las unidades de negocio asignadas a su área.,El aprobador de la unidad de negocio solo ve las unidades de negocio asignadas a su área.,,,,
+
+,Test Case,Acceso de Aprobador a Unidades de Negocio (Error),,,,1,Proyecto/Área,A nombre del responsable,Propuesto
+,,,1,Iniciar sesión como aprobador de la unidad de negocio.,El aprobador de la unidad de negocio inicia sesión con éxito.,,,,
+,,,2,Verificar que el aprobador de la unidad de negocio no puede ver las unidades de negocio no asignadas a su área.,El aprobador de la unidad de negocio no ve las unidades de negocio no asignadas a su área.,,,,
+
+,Test Case,Acceso de Aprobador de Finanzas a Notas de Crédito (Éxito),,,,1,Proyecto/Área,A nombre del responsable,Propuesto
+,,,1,Iniciar sesión como aprobador de finanzas.,El aprobador de finanzas inicia sesión con éxito.,,,,
+,,,2,Verificar que el aprobador de finanzas puede ver las notas de crédito pendientes de aprobación.,El aprobador de finanzas puede ver las notas de crédito pendientes de aprobación.,,,,
+,,,3,Aprobar una solicitud de nota de crédito.,La solicitud de nota de crédito se aprueba correctamente.,,,,
+
+,Test Case,Acceso de Aprobador de Finanzas a Notas de Crédito (Error),,,,1,Proyecto/Área,A nombre del responsable,Propuesto
+,,,1,Iniciar sesión como aprobador de finanzas.,El aprobador de finanzas inicia sesión con éxito.,,,,
+,,,2,Verificar que el aprobador de finanzas no puede ver las notas de crédito no pendientes de aprobación.,El aprobador de finanzas no ve las notas de crédito no pendientes de aprobación.,,,,
+,,,3,Intentar aprobar una solicitud de nota de crédito que no está pendiente de aprobación.,Se muestra un mensaje de error y no se aprueba la solicitud.,,,,

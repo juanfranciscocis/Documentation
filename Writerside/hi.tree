@@ -4,7 +4,7 @@
 
 <instance-profile id="hi"
                  name="METROPOLITAN TOURING DOCUMENTACIÓN"
-                 start-page="Starter.md">
+                 start-page="CREAR_TEST.md">
 
-    <toc-element topic="Starter.md"/>
+    <toc-element topic="CREAR_TEST.md"/>
 </instance-profile>

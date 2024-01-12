@@ -12,14 +12,15 @@
         <p><a href="#crear">Crear un Test en Azure DevOps</a></p>
     </step>
     <step>
-        <p><a href="#masivos">Crear Tests masivos en Azure DevOps</a></p>
+        <p><a href="#crearMasivos">Crear Tests masivos en Azure DevOps</a></p>
+    </step>
+    <step>
+        <p><a href="#masivos">Importar Tests masivos en Azure DevOps</a></p>
     </step>
     <step>
         <p><a href="#correr">Cómo Correr un Test en Azure DevOps</a></p>
     </step>
 </procedure>
-
-
 
 ## DevOps Introducción {id="devops-intro"}
 **Azure DevOps** es un conjunto completo de servicios que capacita a los equipos de desarrollo y operaciones para colaborar eficientemente, ofreciendo un espacio centralizado para compartir código, realizar un seguimiento detallado del trabajo y desplegar software de manera integral. Entre sus funcionalidades, Azure DevOps incorpora repositorios privados de Git, un sistema de compilación CI/CD, tableros Kanban, seguimiento de problemas, y una gama amplia de herramientas adicionales.
@@ -51,7 +52,7 @@ La creación de un test en Azure DevOps es un proceso fundamental que permite de
 <procedure>
 <step>
     <p>Acceso a Azure DevOps: Inicie sesión en Azure DevOps y navegue hasta el proyecto o repositorio donde desea crear el test.</p>
-    <p>Inicia sesión aquí -> <a href="https://dev.azure.com/MetropolitanTouring/"></a></p>
+    <a href="https://dev.azure.com/MetropolitanTouring/">Iniciar Sesión</a>
 </step>
 <step>
     <p>Elegir un proyecto: En la interfaz de Azure DevOps, seleccione el proyecto o repositorio donde desea crear el test.</p>
@@ -80,7 +81,46 @@ La creación de un test en Azure DevOps es un proceso fundamental que permite de
 </step>
 </procedure>
 
-## Crear Tests masivos en Azure DevOps {id="masivos"}
+## Crear Tests masivos en Azure DevOps {id="crearMasivos"}
+<procedure>
+<step>
+    <p>Para crear tests masivos debemos descargar el template</p>
+    <a href="https://juanfranciscocis.github.io/Documentation/starter.html#correr" alt="6">Descargar Template</a>
+</step>
+<step>
+    <p>Una vez descargado el template debemos abrirlo en Excel</p>
+    <img src="../images/CREAR_PRUEBAS_AZURE_DEV_OPS/template.png" alt="7"/>
+</step>
+<step>
+    <p>Modificamos el template con los datos de los tests que queremos crear</p>
+</step>
+<step>
+    <p>Una vez que el template ha sido modificado debemos guardarlo como un archivo CSV</p>
+</step>
+</procedure>
+
+**Nota: Se adjunta una web con mayor detalle sobre la creación de tests masivos en Azure DevOps.**
+[Ir a la Referencia](https://ecanarys.com/bulk-export-import-test-cases-to-azure-devops-test-plans-using-csv-file/)
+
+## Importar Tests masivos en Azure DevOps {id="masivos"}
+<procedure>
+<step>
+    <p>Para crear tests masivos debemos encontrarnos dentro de un Test Plan y dentro de una Suite en el menú "Define"</p>
+    <img src="../images/CREAR_PRUEBAS_AZURE_DEV_OPS/correrTest.png" alt="6"/>
+</step>
+<step>
+    <p>Seleccionamos el menú de importación</p>
+    <img src="../images/CREAR_PRUEBAS_AZURE_DEV_OPS/import.png" alt="7"/>
+</step>
+<step>
+    <p>Seleccionamos la opción "Import from CSV"</p>
+    <img src="../images/CREAR_PRUEBAS_AZURE_DEV_OPS/importCSV.png" alt="8"/>
+</step>
+<step>
+    <p> Se abre el explorador de archivos y seleccionamos el archivo CSV que contiene los tests que queremos importar</p>
+</step>
+</procedure>
+
 
 ## Cómo Correr un Test en Azure DevOps {id="correr"}
 <procedure>
@@ -104,12 +144,8 @@ La creación de un test en Azure DevOps es un proceso fundamental que permite de
 <step>
     <p>Una vez que el test ha sido ejecutado guardamos y debemos ejecutar toda la suite de pruebas </p>
 </step>
-
 </procedure>
 
-
-
-[Descargar Template](https://www.jetbrains.com/help/writerside/collapsible-blocks.html)
 
 
 
