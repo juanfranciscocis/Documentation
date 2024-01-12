@@ -4,8 +4,8 @@
 
 <instance-profile id="hi"
                  name="METROPOLITAN TOURING DOCUMENTACIÓN"
-                 start-page="Crear-Documentación.md">
+                 start-page="Crear_Documentación.md">
 
-    <toc-element topic="Crear-Documentación.md"/>
+    <toc-element topic="Crear_Documentación.md"/>
     <toc-element topic="CREAR_TEST.md"/>
 </instance-profile>
