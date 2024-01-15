@@ -181,22 +181,22 @@ Tesorería es el área encargada de cargar la nota de crédito en el sistema. Pa
 
 
 <procedure>
-<step>
- <p>Se muestran solo las notas de crédito que se encuentran en estado "Finalizada" y que no han sido cargadas en el sistema.</p>
- <img src="../images/NOTA_CREDITO_PERU/17.png" alt="17"/>
-</step>
-<step>
- <p>Presionar el botón de "+"</p>
- <img src="../images/NOTA_CREDITO_PERU/18.png" alt="18"/>
-</step>
-<step>
- <p>Adjuntamos el PDF</p>
- <img src="../images/NOTA_CREDITO_PERU/19.png" alt="19"/>
-</step>
-<step>
-    <p>Presionamos el botón de "Cargar"</p>
-    <img src="../images/NOTA_CREDITO_PERU/20.png" alt="20"/>
-</step>
+    <step>
+        <p>Se muestran solo las notas de crédito que se encuentran en estado "Finalizada" y que no han sido cargadas en el sistema.</p>
+        <img src="../images/NOTA_CREDITO_PERU/17.png" alt="17"/>
+    </step>
+    <step>
+        <p>Presionar el botón de "+"</p>
+        <img src="../images/NOTA_CREDITO_PERU/18.png" alt="18"/>
+    </step>
+    <step>
+        <p>Adjuntamos el PDF</p>
+        <img src="../images/NOTA_CREDITO_PERU/19.png" alt="19"/>
+    </step>
+    <step>
+        <p>Presionamos el botón de "Cargar"</p>
+        <img src="../images/NOTA_CREDITO_PERU/20.png" alt="20"/>
+    </step>
 </procedure>
 
 
@@ -206,7 +206,7 @@ Tesorería es el área encargada de cargar la nota de crédito en el sistema. Pa
 Esta es una sección que es manejada únicamente por el equipo de Sistemas.
 
 En este link podremos acceder a la base de datos de Sharepoint donde se almacenan las notas de crédito, roles y usuarios.
- [Ir al SharePoint](https://mt.sharepoint.com/app/pe-notasdecredito/Lists/App_NC_Aprobadores/AllItems.aspx)
+[Ir al SharePoint](https://mt.sharepoint.com/app/pe-notasdecredito/Lists/App_NC_Aprobadores/AllItems.aspx)
 
 
 
