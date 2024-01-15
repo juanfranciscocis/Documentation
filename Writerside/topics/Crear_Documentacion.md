@@ -24,13 +24,11 @@ La documentación es una parte fundamental en el desarrollo de software, ya que 
 <step>
     <p>Acceso a Github: Inicie sesión en Github y navegue hasta el repositorio donde se replica este proyecto.</p>
     <a href="https://github.com/login" alt="1">Iniciar Sesión</a>
-    <p>Email: ... </p>
-    <p>Contraseña: ... </p>
-    <a> href="" alt="2">Repositorio</a>
+    <a href="https://github.com/juanfranciscocis/Documentation">Repositorio</a>
 </step>
 <step>
     <p>WriterSide es un IDE que permite crear documentación de manera sencilla y rápida. </p>
-    <a href="">Descargar WriterSide</a>
+    <a href="https://www.jetbrains.com/writerside/">Descargar WriterSide</a>
 </step>
 <step>
     <p>Pull del repositorio: Una vez que se ha descargado WriterSide, se debe realizar un pull del repositorio para obtener el proyecto y modificarlo.</p>
@@ -38,7 +36,7 @@ La documentación es una parte fundamental en el desarrollo de software, ya que 
 </step>
 <step>
     <img src="../images/DOCUMENTACION/get.png" alt="4"/>
-    <p>El link del repositorio que debemos clonar es el siguiente: ... </p>
+    <p>El link del repositorio que debemos clonar es el siguiente: <a href="https://github.com/juanfranciscocis/Documentation">Ir al Repositorio</a> </p>
 </step>
 <step>
     <p>Nos encontramos listos para trabajar</p>

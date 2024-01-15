@@ -85,7 +85,7 @@ La creación de un test en Azure DevOps es un proceso fundamental que permite de
 <procedure>
 <step>
     <p>Para crear tests masivos debemos descargar el template</p>
-    <a href="https://juanfranciscocis.github.io/Documentation/starter.html#correr" alt="6">Descargar Template</a>
+    <a href="https://github.com/juanfranciscocis/Documentation/blob/91a270452bf9b268f9da947166f86b81b2d10370/Writerside/images/CREAR_PRUEBAS_AZURE_DEV_OPS/template.csv" alt="6">Descargar Template</a>
 </step>
 <step>
     <p>Una vez descargado el template debemos abrirlo en Excel</p>
