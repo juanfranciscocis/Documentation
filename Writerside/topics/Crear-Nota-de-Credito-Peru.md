@@ -77,6 +77,44 @@ En caso de hacer la solicitud por el monto total del booking, se debe ingresar e
     </step>
 </procedure>
 
+### Nota de Crédito por Servicios
+
+En caso de hacer la solicitud por servicios de un booking, se debe ingresar el Supplier Name, Product Name y Monto.
+<procedure>
+    <step>
+        <p> Ingresar el Supplier Name, Product Name y Monto </p>
+        <img src="../images/NOTA_CREDITO_PERU/14.png" alt="14"/>
+    </step>
+    <step>
+        <p> Asignar el servicio </p>
+        <img src="../images/NOTA_CREDITO_PERU/15.png" alt="15"/>
+        <warning>
+              <p>Asignar los cuántos servicios se desean solicitar</p>
+              <img src="../images/NOTA_CREDITO_PERU/16.png" alt="16"/>
+        </warning>
+    </step>
+    <step>
+        <p> Enviar la solicitud dando click en Finalizar</p>
+        <img src="../images/NOTA_CREDITO_PERU/4.png" alt="4"/>
+    </step>
+    <step>
+        <p>Podremos verificar el estado de la nota de crédito en el menú "Consultar NC"</p>
+        <img src="../images/NOTA_CREDITO_PERU/5.png" alt="5"/>
+        <warning>
+            <p>El estado de la nota de crédito puede ser: </p>
+            <p>1. Pendiente </p>
+            <p>2. Pre-Aprobada </p>
+            <p>3. Aprobada </p>
+            <p>4. Pre-Registrada </p>
+            <p>5. Finalizada </p>
+            <p>5. Rechazada </p>
+            <p>6. Cancelada </p>
+        </warning>
+    </step>
+    <step>
+        <p>Verificar que los emails de aprobación o rechazo cada x tiempo</p>
+    </step>
+</procedure>
 
 ## Aprobar Nota de Crédito {id="aprobar"}
 
