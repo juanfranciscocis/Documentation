@@ -11,6 +11,9 @@
         <p><a href="#aprobar">Aprobar o Rechazar Nota de Crédito</a></p>
     </step>
     <step>
+        <p><a href="#cargar"> Cargar NC en el sistema (Tesorería)</a></p>
+    </step>
+    <step>
         <p><a href="#sharepoint">SharePoint Base de Datos</a></p>
     </step>
 
@@ -169,6 +172,34 @@ En caso de que la solicitud haya sido FINALIZADA, se debe descargar la nota de c
         <img src="../images/NOTA_CREDITO_PERU/13.png" alt="13"/>
     </step>
 </procedure>
+
+
+## Cargar NC en el sistema (Tesorería) {id="cargar"}
+
+Tesorería es el área encargada de cargar la nota de crédito en el sistema. Para esto se debe ingresar a la app y buscar la sección de Cargar NC.
+
+
+
+<procedure>
+<step>
+ <p>Se muestran solo las notas de crédito que se encuentran en estado "Finalizada" y que no han sido cargadas en el sistema.</p>
+ <img src="../images/NOTA_CREDITO_PERU/17.png" alt="17"/>
+</step>
+<step>
+ <p>Presionar el botón de "+"</p>
+ <img src="../images/NOTA_CREDITO_PERU/18.png" alt="18"/>
+</step>
+<step>
+ <p>Adjuntamos el PDF</p>
+ <img src="../images/NOTA_CREDITO_PERU/19.png" alt="19"/>
+</step>
+<step>
+    <p>Presionamos el botón de "Cargar"</p>
+    <img src="../images/NOTA_CREDITO_PERU/20.png" alt="20"/>
+</step>
+</procedure>
+
+
 
 ## SharePoint Base de Datos {id="sharepoint"}
 
