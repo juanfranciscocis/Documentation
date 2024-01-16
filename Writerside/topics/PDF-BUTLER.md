@@ -13,6 +13,9 @@
     <step>
         <p><a href="#salesforce"> Cómo usarlo en Salesforce</a></p>
     </step>
+    <step>
+        <p><a href="#users">Configurar Acceso Usuarios</a></p>
+    </step>
 </procedure>
 
 ## Documentación Introducción {id="intro"}
@@ -211,4 +214,30 @@ El ID que devuelve el objeto en PDF Butler es clave para poder utilizarlo en Sal
     </step>
 </procedure>
 
+## Configurar Acceso Usuarios {id="users"}
+
+Para configurar el acceso de los usuarios a PDF Butler debemos ir a la sección de "User" en SalesForce y agregar los usuarios que queramos
+
+<procedure>
+    <step>
+        <p>En la sección de "Setup" buscamos la sección de "Users"</p>
+        <img src="../images/PDF_BUTLER/33.png" alt="33"/>
+    </step>
+    <step>
+         <p>En los Permission Set Assignments verificar PDF Butler Admin Local</p>
+        <img src="../images/PDF_BUTLER/34.png" alt="34"/>
+    </step>
+    <step>
+        <p>En la sección de Managed Packages verificar PDF Butler</p>
+        <img src="../images/PDF_BUTLER/35.png" alt="35"/>
+    </step>
+    <step>
+        <p>Asignamos la licencia dando click sobre PDF Butler, licencia y ADD</p>
+        <img src="../images/PDF_BUTLER/36.png" alt="36"/>
+        <warning>
+            <p>En este caso se muestra en blanco porque las licencias ya han sido asignadas</p>
+            <p>Dario es quien puede otorgar nuevas licencia</p>
+        </warning>
+    </step>
+</procedure>
 
