@@ -51,7 +51,6 @@ En caso de hacer la solicitud por el monto total del booking, se debe ingresar e
 <procedure>
     <step>
         <p> Ingresar el monto total del booking </p>
-        <img src="../images/NOTA_CREDITO_PERU/2.png" alt="2"/>
     </step>
     <step>
         <p> Asignar el monto total del booking </p>
