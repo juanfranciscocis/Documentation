@@ -6,6 +6,7 @@
                  name="METROPOLITAN TOURING DOCUMENTACIÓN"
                  start-page="Crear_Documentacion.md">
 
+    <toc-element topic="PDF-BUTLER.md"/>
     <toc-element topic="Crear_Documentacion.md"/>
     <toc-element topic="CREAR_TEST.md"/>
     <toc-element topic="Crear-Nota-de-Credito-Peru.md"/>
